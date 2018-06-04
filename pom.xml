@@ -6,7 +6,7 @@
 	<groupId>com.springBike</groupId>
 	<artifactId>springboot-bike</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<name>springboot-bike</name>
 	<description>Bike Application using Angular </description>
@@ -53,6 +53,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>docker-bikeapi</finalName>
 	</build>
 
 
