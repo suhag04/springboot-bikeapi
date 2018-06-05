@@ -1,7 +1,7 @@
 
 FROM maven:3.5-jdk-8
 
-RUN mkdir -p /deploy/application
+RUN usermod -a -G staff jenkins
 
 VOLUME ["/deploy/application"]
 
