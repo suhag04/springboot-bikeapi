@@ -51,9 +51,11 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<finalName>docker-bikeapi</finalName>
+				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>docker-bikeapi</finalName>
 	</build>
 
 
