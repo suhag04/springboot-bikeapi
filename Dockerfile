@@ -1,14 +1,4 @@
-
-FROM maven:3.5-jdk-8
-
-RUN usermod -a -G staff jenkins
-
-VOLUME ["/deploy/application"]
-
-WORKDIR /deploy/application
-
-ADD . .
-
-ENTRYPOINT ["mvn","clean","package"]
-
-USER jenkins
+FROM openjdk:8
+ADD target/docker-bikeapi.jar docker-bikeapi.jar
+EXPOSE 8086
+ENTRYPOINT ["java", "-jar", "docker-bikeapi.jar"]
