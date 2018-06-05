@@ -10,3 +10,5 @@ WORKDIR /deploy/application
 ADD . .
 
 ENTRYPOINT ["mvn","clean","package"]
+
+USER jenkins
