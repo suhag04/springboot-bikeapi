@@ -1,3 +1,12 @@
-FROM openjdk:8
-ADD target/docker-bikeapi.jar docker-bikeapi.jar
-EXPOSE 8085
+
+FROM maven:3.5-jdk-8
+
+RUN mkdir -p /deploy/application
+
+VOLUME ["/deploy/application"]
+
+WORKDIR /deploy/application
+
+ADD . .
+
+ENTRYPOINT ["mvn","clean","package"]
