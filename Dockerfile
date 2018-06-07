@@ -1,5 +1,4 @@
 FROM frolvlad/alpine-oraclejdk8:slim
-VOLUME /tmp
 ADD springboot-bike-0.0.1-SNAPSHOT.jar api.jar
 RUN sh -c 'touch /api.jar'
 ENV JAVA_OPTS="-Dspring.profiles.active=prod"
