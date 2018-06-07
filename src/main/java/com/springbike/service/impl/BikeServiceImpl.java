@@ -17,13 +17,11 @@ public class BikeServiceImpl implements BikeService {
 
 	@Override
 	public List<Bike> getAllBikes() {
-		// TODO Auto-generated method stub
 		return bikeRepository.findAll();
 	}
 
 	@Override
 	public Bike getBikeById(long id) {
-		// TODO Auto-generated method stub
 		return bikeRepository.getOne(id);
 	}
 

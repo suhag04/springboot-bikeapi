@@ -6,7 +6,7 @@
 	<groupId>com.springBike</groupId>
 	<artifactId>springboot-bike</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<name>springboot-bike</name>
 	<description>Bike Application using Angular </description>
@@ -36,12 +36,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>6.0.4</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<version>2.0.1.RELEASE</version>
+			<version>6.0.5</version>
 		</dependency>
 
 	</dependencies>
